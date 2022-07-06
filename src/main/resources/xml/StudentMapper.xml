@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wkcto.plus.mapper.StudentMapper">
+    <insert id="insertStudent">
+        insert into student(name,age,email,status) values(#{name},#{age},#{email},#{status})
+    </insert>
+
+    <select id="selectStudentById" resultType="com.wkcto.plus.entity.Student">
+        select id,name,age,email,status from student where id=#{studentId}
+    </select>
+
+    <select id="selectByName" resultType="com.wkcto.plus.entity.Student">
+        select id,name,age,email,status from student where name=#{name}
+    </select>
+</mapper>
