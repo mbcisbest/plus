@@ -62,5 +62,6 @@ public class AutoMapper {
 
         //执行代码的生成
         ag.execute();
+
     }
 }
