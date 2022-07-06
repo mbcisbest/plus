@@ -13,7 +13,6 @@ public class AutoMapper {
     public static void main(String[] args) {
         //创建AutoGenerator ,MP中对象
         AutoGenerator ag = new AutoGenerator();
-
         //设置全局配置
         GlobalConfig gc  = new GlobalConfig();
         //设置代码的生成位置， 磁盘的目录
